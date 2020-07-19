@@ -32,13 +32,13 @@ current_year           = datetime.now().strftime("%Y")
 
 
 def putText(position, text, scale, colour):
-    cv2.putText(output_image,
-        text,  #the variable in the function (what to write)
-        (position), #the position
-        cv2.FONT_HERSHEY_SIMPLEX, #font
-        scale, # font scale
-        (colour), #font colour
-        2) #line type
+    cv2.putText(output_image, # the image to write onto
+        text,  #the variable in the function (what to write): "str"
+        (position), #the position: (x, y)
+        cv2.FONT_ITALIC, #font: cv2.str
+        scale, # font scale: x
+        (colour), #font colour: (x, y, z)
+        2) #line thickness: x
 
 def putTime():
     putText((10, 20), current_day, 0.5, (255, 255, 255))
