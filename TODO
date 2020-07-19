@@ -1,5 +1,3 @@
-- Need to create a way of switching between the webcam and just a black screen.
-
 - Need a way to press a button (or joystick) and to then take a voice input of the city you want to check the weather for.
 - Need to display when the spoken words, dont work (not a city name, and not heard)
 
