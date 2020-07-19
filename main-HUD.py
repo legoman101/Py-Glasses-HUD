@@ -31,25 +31,25 @@ current_month          = datetime.now().strftime("%d")
 current_year           = datetime.now().strftime("%Y")
 
 
-def putText(position,text, scale):
+def putText(position, text, scale, colour):
     cv2.putText(output_image,
         text,  #the variable in the function (what to write)
         (position), #the position
         cv2.FONT_HERSHEY_SIMPLEX, #font
         scale, # font scale
-        (255,255,255), #font colour
+        (colour), #font colour
         2) #line type
 
 def putTime():
-    putText((10, 20), current_day, 0.5)
-    putText((70, 20), current_month, 0.5)
-    putText((100, 20), current_year, 0.5)
-    putText((150, 20), str(datetime.now().strftime("%H:%M:%S")), 0.5)
+    putText((10, 20), current_day, 0.5, (255, 255, 255))
+    putText((70, 20), current_month, 0.5, (255, 255, 255))
+    putText((100, 20), current_year, 0.5, (255, 255, 255))
+    putText((150, 20), str(datetime.now().strftime("%H:%M:%S")), 0.5, (255, 255, 255))
 
 def putWeather():
-    putText((10, 50), Temperature, 0.5) # Puts the Temperature onto the frame
-    putText((10, 70), Description, 0.5) # Puts the  weather Description onto the frame
-    putText((10, 90), Humidity, 0.5) #Puts the Humidity onto the frame
+    putText((10, 50), Temperature, 0.5, (255, 0, 0)) # Puts the Temperature onto the frame
+    putText((10, 70), Description, 0.5, (0,255,0)) # Puts the  weather Description onto the frame
+    putText((10, 90), Humidity, 0.5, (0, 0, 255)) #Puts the Humidity onto the frame
 
 def getweather_lat_long(latitude, longitude):
     api_key = os.getenv('openweathermapsapikey')
