@@ -1,0 +1,7 @@
+opencv-python #for the HUD
+numpy # For the HUD
+Pillow 
+pynput # for keyboard inputs
+UliEngineering # for the kelvin to celsius conversions
+geocoder #for loation stuff
+dotenv

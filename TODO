@@ -1,0 +1,10 @@
+- Need to create a way of switching between the webcam and just a black screen.
+
+- Need a way to press a button (or joystick) and to then take a voice input of the city you want to check the weather for.
+- Need to display when the spoken words, dont work (not a city name, and not heard)
+
+- Make each 'Screen' a function. (Date&Time, Weather, Emails, {Switch to object detection mode??})
+- Make Multiple 'Screens' and make them be controlled by a joystick.
+- Make the object detection stuff a 'screen'
+
+- Need to use facial recognition to display information about a person (e.g. a name, phone number etc.)
