@@ -5,4 +5,5 @@
 - Make Multiple 'Screens' and make them be controlled by a joystick.
 - Make the object detection stuff a 'screen'
 
+- Need to display what is being said into the microphone
 - Need to use facial recognition to display information about a person (e.g. a name, phone number etc.)
